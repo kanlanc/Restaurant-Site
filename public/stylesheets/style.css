@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+.ptext{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ptext .border{
+  color: white;
+  background-color: black;
+  padding: 20px;
+}

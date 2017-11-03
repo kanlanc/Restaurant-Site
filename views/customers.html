@@ -1,0 +1,48 @@
+<div class="container" ng-controller="AboutController">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="breadcrumb">
+          <li>
+            <a ui-sref="app">Home</a>
+          </li>
+          <li class="active">About Us</li>
+        </ul>
+      </div>
+      <div class="col-xs-12">
+        <h3>Customers</h3>
+        <hr>
+      </div>
+    </div>
+  
+    
+  
+    <div class="row row-content">
+      <div class="col-xs-12 col-sm-9">
+        
+        <ul class="media-list">
+          <li class="media" ng-repeat="leader in customers">
+            <div class="media-left media-middle">
+              <img class="img-thumbnail media-object" ng-src="{{leader.image}}">
+            </div>
+            <div class="media-body">
+              <h3 class="media-heading">{{leader.name}}</h3>
+              <ul>
+                <li class="media-body">Email:{{leader.email}}</li><br>
+                <li class="media-body">Phone:{{leader.phone}}</li><br>
+                <li class="media-body">Username:{{leader.username}}</li><br>
+                <li class="media-body">Password:{{leader.password}}</li><br>
+                <li class="media-body">Address:{{leader.address}}</li><br>
+              </ul>
+                
+            </div>
+          </li>
+        </ul>
+  
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <p style="padding:20px;"></p>
+      </div>
+    </div>
+    
+  </div>
+  
